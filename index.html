@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+
+<body style="display: flex; flex-wrap: wrap;">
+
+    <div style="width: 50%;" id="map"></div>
+
+
+    <div style="width: 50%;" id="form">
+
+        <div class="box">
+            <h1>Find Location</h1>
+            <input type="text" id="lat" placeholder="Latitude">
+            <input type="text" id="lng" placeholder="Longitude">
+            <input type="submit" id="browse" value="Browse">
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2" async></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFLzx-8SYi6OBQHMA4KF14ChY_gD0NIn0&callback=initMap"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
